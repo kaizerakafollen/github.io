@@ -322,5 +322,72 @@ li {
       }
     }
   }
+}
+// Close About-Team
 
+// Start Feature-numbers 
+
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+ 
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+
+
+
+
+
+.feature-numbers {
+  width: 100%;
+  background-color: $blue;
+  .container-numbers {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    li {
+      display:inline-block;
+    }
+    .text-number {
+      font-family: $montserrat;
+      font-size: 52px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .mini-text-number {
+      font-family: $montserrat;
+      font-weight: 400;
+      font-size: $size;
+      color: #fff;
+    }
+  }
 }

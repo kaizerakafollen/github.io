@@ -255,4 +255,48 @@ li {
         .about-team .foto-team .mini-link a p {
           padding-top: 5px; }
 
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.col-xs-1-5 {
+  width: 20%;
+  float: left; }
+
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left; } }
+.feature-numbers {
+  width: 100%;
+  background-color: #95e1d3; }
+  .feature-numbers .container-numbers {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+    .feature-numbers .container-numbers li {
+      display: inline-block; }
+    .feature-numbers .container-numbers .text-number {
+      font-family: "Montserrat", sans-serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: #fff; }
+    .feature-numbers .container-numbers .mini-text-number {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
