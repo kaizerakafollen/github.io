@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Creative Template</title>
+
+	<!-- Подключаем слайдер -->
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+   <!-- Подкючаем шрифты -->
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400" rel="stylesheet">
+
+  <!-- Подключаем Bootstrap -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+ 	<!-- Подключаем стили -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+ <!-- Header -->
+
+ <div class="header">
+	<div class="slider">
+ 		<div class="main-foto-1"></div>
+ 		<div class="main-foto-2"></div>
+ 		<div class="main-foto-3"></div>
+ 		<div class="main-foto-4"></div>
+ 	</div>
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-lg-6 logo">
+ 				<h4>MoGo</h4>
+ 			</div>
+ 			<div class="col-lg-6 menu pull-right">
+ 				<ul>
+ 					<li><a href="#">about</a></li>
+ 					<li><a href="#">service</a></li>
+ 					<li><a href="#">work</a></li>
+ 					<li><a href="#">blog</a></li>
+ 					<li><a href="#">contact</a></li>
+ 					<li><a href="#"><img src="img/svg/SHOPPING CART.svg" alt="#"></a></li>
+ 					<li><a href="#"><img src="img/svg/search.svg" alt="#"></a></li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="col-lg-12 text-center">
+ 				<h2>Creative Template</h2>
+ 				<h1>welcome to mogo</h1>
+ 				<span></span>
+ 				<div class="link-btn">
+ 					<a class ="link-more" href="#">learn more</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="col-lg-3">
+ 				<p class="main-text">
+ 					01 INTRO
+ 				</p>
+ 			</div>
+ 			<div class="col-lg-3">
+ 				<p class="main-text">
+ 					02 WORK
+ 				</p>
+ 			</div>
+ 			<div class="col-lg-3">
+ 				<p class="main-text">
+ 					03 ABOUT
+ 				</p>
+ 			</div>
+ 			<div class="col-lg-3">
+ 				<p class="main-text">
+ 					04 CONTACTS
+ 				</p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+ <!-- About team -->
+
+ <div class="about-team">
+ 	<div class="container-team">
+ 		<div class="row">
+ 			<div class="col-lg-12">
+ 				<p class="text-team text-center">
+ 					What we do
+ 				</p>
+ 				<p class="text-team-main text-center">
+ 					story about us
+ 				</p>
+ 				<span class="line-red text-center"></span>
+ 				<p class="about-text text-center">
+ 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+ 				</p>
+ 			</div>
+ 			<div class="col-lg-4">
+ 				<div class="about-foto-1 foto-team">
+					<div class="about-team-foto-1">
+						<div class="mini-link">
+							<a href="#">
+								<img src="img/about-team/users.svg" alt="user">
+								<p class="mini-text">
+									super team
+								</p>
+							</a>
+						</div>
+					</div>					
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-4">
+ 				<div class="about-foto-2 foto-team">
+					<div class="about-team-foto-2">
+						<div class="mini-link">
+							<a href="#">
+								<img src="img/about-team/users.svg" alt="user">
+								<p class="mini-text">
+									mega team
+								</p>
+							</a>
+						</div>
+					</div>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-4">
+ 				<div class="about-foto-3 foto-team">
+					<div class="about-team-foto-3">
+						<div class="mini-link">
+							<a href="#">
+								<img src="img/about-team/users.svg" alt="user">
+								<p class="mini-text">
+									amazing team
+								</p>
+							</a>
+						</div>
+					</div>
+ 				</div>
+ 			</div>
+
+
+ 		</div>
+ 	</div>
+ </div>
+
+
+
+
+
+<!-- Подключаем Bootstrap (jQuery) -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<!-- Подключаем скрипты -->
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+  		$('.slider').slick({
+  			infinite: true,
+  			autoplay: true,
+  			dots: true,
+  			arrows: false,
+  			autoplaySpeed: 3000,
+  			slidesToShow: 1,
+  			slidesToScroll: 1
+  		});
+  	})
+	</script>
+</body>
+</html>
