@@ -299,4 +299,117 @@ li {
       font-size: 14px;
       color: #fff; }
 
+.work {
+  width: 100%;
+  background-color: #fff; }
+  .work .container-work {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 90px; }
+    .work .container-work .text-team {
+      padding-top: 70px;
+      font-family: "Kaushan Script", cursive;
+      color: #000;
+      font-size: 24px; }
+    .work .container-work .text-team-main {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .work .container-work .line-red {
+      margin-top: 40px;
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: #f38181;
+      margin: 50px auto;
+      margin-bottom: 70px; }
+    .work .container-work .work-text {
+      padding-top: 40px;
+      display: inline-block;
+      padding-left: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #333333; }
+    .work .container-work .work-text-about {
+      display: inline-block;
+      padding-left: 65px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 15px; }
+
+.devices {
+  width: 100%;
+  background: url(../img/mobile-fon.jpg) no-repeat center center; }
+  .devices .container-devices {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .devices .container-devices .text-team {
+      padding-top: 70px;
+      font-family: "Kaushan Script", cursive;
+      color: #000;
+      font-size: 24px; }
+    .devices .container-devices .text-team-main {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .devices .container-devices .line-red {
+      margin-top: 40px;
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: #f38181;
+      margin: 50px auto;
+      margin-bottom: 70px; }
+    .devices .container-devices .devices-ipad {
+      display: inline-block; }
+      .devices .container-devices .devices-ipad img {
+        height: 550px;
+        padding-left: 350px; }
+    .devices .container-devices .devices-iphone {
+      display: inline-block;
+      position: absolute;
+      right: 250px; }
+      .devices .container-devices .devices-iphone img {
+        padding-top: 210px; }
+
+.service {
+  width: 100%; }
+  .service .container-service {
+    width: 1200px;
+    margin: 0 auto; }
+    .service .container-service .text-team {
+      padding-top: 140px;
+      font-family: "Kaushan Script", cursive;
+      color: #000;
+      font-size: 24px; }
+    .service .container-service .text-team-main {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .service .container-service .line-red {
+      margin-top: 40px;
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: #f38181;
+      margin: 50px auto;
+      margin-bottom: 70px; }
+    .service .container-service .service-text {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      padding-bottom: 70px; }
+
 /*# sourceMappingURL=style.css.map */
