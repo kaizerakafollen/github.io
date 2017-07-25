@@ -130,30 +130,30 @@ li {
   }
   .link-btn {
     padding: 10px;
-      .link-more {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: $size;
-    font-family: $montserrat;
-    font-weight: 700;
-    border: 3px solid #fff;
-    padding: 10px 40px;
+    .link-more {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: $size;
+      font-family: $montserrat;
+      font-weight: 700;
+      border: 3px solid #fff;
+      padding: 10px 40px;
     }
   }
   .main-text {
-      margin-top: 10px;
-      font-family: $montserrat;
-      font-size: 14px;
-      font-weight: 700;
-      color: #faf3dc;
-      position: relative;
-      bottom: -75px;
-      left: 5px;
+    margin-top: 10px;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    color: #faf3dc;
+    position: relative;
+    bottom: -75px;
+    left: 5px;
   }
 }
- 
- Фоновый слайдер
+
+Фоновый слайдер
 
 .slider {
   position: relative;
@@ -573,7 +573,6 @@ li {
 /* стили блока аккордеон */
 .accordion {
   width:100%;
-  max-width: 600px; 
   margin: 0 auto
 }
 /* секции аккордеона */
@@ -584,8 +583,8 @@ li {
   padding-top: 10px;
 }
 .accordion_item:last-child {
-    border-bottom: 1px solid #e5e5e5;
-  }
+  border-bottom: 1px solid #e5e5e5;
+}
 /* заголовки панелей аккордеона */
 .accordion .title_block {
   display: inline-block;
@@ -632,38 +631,38 @@ li {
   display:none;
 }
 ::-webkit-scrollbar-button {
-background-image:url('');
-background-repeat:no-repeat;
-width:10px;
-height:0px
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:10px;
+  height:0px
 }
 
 ::-webkit-scrollbar-track {
-background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
--webkit-border-radius: 0px;
-border-radius: 15px;
-background-color: $blue;
+  -webkit-border-radius: 0px;
+  border-radius: 15px;
+  background-color: $blue;
 
 }
 
 ::-webkit-scrollbar-thumb:hover{
-background-color: $pink;
-cursor: pointer;
+  background-color: $pink;
+  cursor: pointer;
 
 }
 
 ::-webkit-resizer{
-background-image:url('');
-background-repeat:no-repeat;
-width:4px;
-height:0px
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
 }
 
 ::-webkit-scrollbar{
-width: 4px;
+  width: 4px;
 }
 /* параграф внутри блоков с содержанием */
 .accordion .info_item {
@@ -671,25 +670,25 @@ width: 4px;
 }
 /* картинки внутри аккордеона */
 .accordion .info img {
-    height: auto;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 /* полноразмерная картинка */
 .large-img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 /* миниатюра слева */
 .img-left {
-    width: 25%;
-    float:left;
-    margin:5px 15px 5px 0;
+  width: 25%;
+  float:left;
+  margin:5px 15px 5px 0;
 }
 /* миниатюра справа */
 .img-right {
-    width: 25%;
-    float:right;
-    margin:5px 0 5px 15px;
+  width: 25%;
+  float:right;
+  margin:5px 0 5px 15px;
 }
 // Close accordion
 /* Styles specific to this particular page */
@@ -713,11 +712,11 @@ width: 4px;
   }
 }
 .slider-foto {
-    margin-left: 125px;
-    margin-top: 50px;
-    padding: 24px;
-    display: inline-block;
-    border: 2px solid #95e1d3;
+  margin-left: 125px;
+  margin-top: 50px;
+  padding: 24px;
+  display: inline-block;
+  border: 2px solid #95e1d3;
 }
 
 .carousel-inner {
@@ -774,3 +773,183 @@ a.right.carousel-control {
 }
 
 // Close first-slider -----------------------
+
+
+// Start meet team ------------------------------------------------------------
+
+.meet {
+  width: 100%;
+  background-color: #fff;
+  .container-meet {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    .text-team {
+      padding-top: 140px;
+      font-family: $kaushan;
+      color: #000;
+      font-size: 24px;
+    }
+    .text-team-main {
+      font-family: $montserrat;
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .line-red {
+      margin-top: 40px;
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: $pink;
+      margin: 50px auto;
+      margin-bottom: 70px;
+    }
+    .service-text {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: $roboto;
+      font-size: 15px;
+      font-weight: 400;
+      padding-bottom: 70px;
+    }
+    .foto-team-our {
+      margin-left: 0px;
+    }
+    .foto-team {
+      position: relative;
+      background-color: $blue;
+      width: 340px;
+      height: 390px;
+      .about-team-foto-1 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease;
+      }
+      .about-team-foto-1:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .about-team-foto-2 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease;
+      }
+      .about-team-foto-2:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .about-team-foto-3 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease;
+      }
+      .about-team-foto-3:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .mini-link {
+        position: relative;
+        width: 243px;
+        height: 50px;
+        background-color: #fce38a;
+        margin: 0 auto;
+        top: 50%;
+        a {
+          border-right: 1px solid #f9bd87;
+          padding: 9px 19px 25px 19px;
+          text-decoration: none;
+          img {
+            vertical-align: middle;
+            padding-top: 10px;
+          }
+        }
+        a:last-child {
+          border-right: none;
+        }
+        .link-facebook {
+          background: url(../img/meet/meet-svg/white/facebook.png) no-repeat center center;
+        }
+        .link-facebook:hover {
+          background: url(../img/meet/meet-svg/white/facebook-white.png) no-repeat center center;
+          background-color: $pink;
+        }
+        .link-twitter {
+          background: url(../img/meet/meet-svg/white/twitter.png) no-repeat center center;
+        }
+        .link-twitter:hover {
+          background:  url(../img/meet/meet-svg/white/twitter-white.png) no-repeat center center;
+          background-color: $pink;
+        }
+        .link-pinterest {
+          background: url(../img/meet/meet-svg/white/pinterest.png) no-repeat center center;
+        }
+        .link-pinterest:hover {
+          background:  url(../img/meet/meet-svg/white/pinterest-white.png) no-repeat center center;
+          background-color: $pink;
+        }
+        .link-instagram {
+          background: url(../img/meet/meet-svg/white/instagram.png) no-repeat center center;
+        }
+        .link-instagram:hover {
+          background:  url(../img/meet/meet-svg/white/instagram-white.png) no-repeat center center;
+          background-color: $pink;
+        }
+        .social-link {
+          padding: 2px 39px 32px 21px;
+        }
+      }
+    }
+  }
+  .name-man {
+    text-align: center;
+    .name-mane-team {
+      padding-top: 30px;
+      font-family: $montserrat;
+      font-weight: 700;
+      font-size: $size;
+      text-transform: uppercase;
+    }
+    .worker-team {
+      font-family: $roboto;
+      font-style: italic;
+      font-size: $size;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+
+
+
+// Close meet team ---------------------------

@@ -417,7 +417,6 @@ li {
 /* ╤Б╤В╨╕╨╗╨╕ ╨▒╨╗╨╛╨║╨░ ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜ */
 .accordion {
   width: 100%;
-  max-width: 600px;
   margin: 0 auto; }
 
 /* ╤Б╨╡╨║╤Ж╨╕╨╕ ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜╨░ */
@@ -599,5 +598,145 @@ a.right.carousel-control {
 .glyphicon-chevron-right:before {
   font-size: 20px;
   color: #000; }
+
+.meet {
+  width: 100%;
+  background-color: #fff; }
+  .meet .container-meet {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 90px; }
+    .meet .container-meet .text-team {
+      padding-top: 140px;
+      font-family: "Kaushan Script", cursive;
+      color: #000;
+      font-size: 24px; }
+    .meet .container-meet .text-team-main {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .meet .container-meet .line-red {
+      margin-top: 40px;
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: #f38181;
+      margin: 50px auto;
+      margin-bottom: 70px; }
+    .meet .container-meet .service-text {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      padding-bottom: 70px; }
+    .meet .container-meet .foto-team-our {
+      margin-left: 0px; }
+    .meet .container-meet .foto-team {
+      position: relative;
+      background-color: #95e1d3;
+      width: 340px;
+      height: 390px; }
+      .meet .container-meet .foto-team .about-team-foto-1 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease; }
+      .meet .container-meet .foto-team .about-team-foto-1:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .meet .container-meet .foto-team .about-team-foto-2 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease; }
+      .meet .container-meet .foto-team .about-team-foto-2:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .meet .container-meet .foto-team .about-team-foto-3 {
+        position: absolute;
+        width: 340px;
+        height: 390px;
+        background: url(../img/meet/man-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 0px;
+        margin-top: 0px;
+        transition: margin 1s ease; }
+      .meet .container-meet .foto-team .about-team-foto-3:hover {
+        margin-top: -10px;
+        margin-left: -10px;
+        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .meet .container-meet .foto-team .mini-link {
+        position: relative;
+        width: 243px;
+        height: 50px;
+        background-color: #fce38a;
+        margin: 0 auto;
+        top: 50%; }
+        .meet .container-meet .foto-team .mini-link a {
+          border-right: 1px solid #f9bd87;
+          padding: 9px 19px 25px 19px;
+          text-decoration: none; }
+          .meet .container-meet .foto-team .mini-link a img {
+            vertical-align: middle;
+            padding-top: 10px; }
+        .meet .container-meet .foto-team .mini-link a:last-child {
+          border-right: none; }
+        .meet .container-meet .foto-team .mini-link .link-facebook {
+          background: url(../img/meet/meet-svg/white/facebook.png) no-repeat center center; }
+        .meet .container-meet .foto-team .mini-link .link-facebook:hover {
+          background: url(../img/meet/meet-svg/white/facebook-white.png) no-repeat center center;
+          background-color: #f38181; }
+        .meet .container-meet .foto-team .mini-link .link-twitter {
+          background: url(../img/meet/meet-svg/white/twitter.png) no-repeat center center; }
+        .meet .container-meet .foto-team .mini-link .link-twitter:hover {
+          background: url(../img/meet/meet-svg/white/twitter-white.png) no-repeat center center;
+          background-color: #f38181; }
+        .meet .container-meet .foto-team .mini-link .link-pinterest {
+          background: url(../img/meet/meet-svg/white/pinterest.png) no-repeat center center; }
+        .meet .container-meet .foto-team .mini-link .link-pinterest:hover {
+          background: url(../img/meet/meet-svg/white/pinterest-white.png) no-repeat center center;
+          background-color: #f38181; }
+        .meet .container-meet .foto-team .mini-link .link-instagram {
+          background: url(../img/meet/meet-svg/white/instagram.png) no-repeat center center; }
+        .meet .container-meet .foto-team .mini-link .link-instagram:hover {
+          background: url(../img/meet/meet-svg/white/instagram-white.png) no-repeat center center;
+          background-color: #f38181; }
+        .meet .container-meet .foto-team .mini-link .social-link {
+          padding: 2px 39px 32px 21px; }
+  .meet .name-man {
+    text-align: center; }
+    .meet .name-man .name-mane-team {
+      padding-top: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .meet .name-man .worker-team {
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
