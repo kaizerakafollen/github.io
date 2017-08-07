@@ -1,955 +1,456 @@
-// Переменные со шрифтами
+/* Переменная со шрифтом */
+$avenir: 'AvenirNext', sans-serif;
 
-$montserrat: 'Montserrat', sans-serif;
-$kaushan: 'Kaushan Script', cursive;
-$roboto: 'Roboto', sans-serif;
-
-// Переменные с цветом 
-
-$pink: #f38181;
-$yellow: #fce38a;
-$white: #eaffd0;
-$blue: #95e1d3;
-
-// Переменная с размером шрифта
-
-$size: 14px;
+/* Переменная с цветом*/
+$grey: #333333;
+$blue: #4fc6ef;
+$grey-back: #6e6e6e;
 
 
-// Body
 
-li {
-  list-style: none;
+/* Переменная размера шрифта */
+$main-size: 16px;
+$second-size: 14px;
+$big-size: 18px;
+
+
+/* Стили для body*/
+
+body {
+	background-color: #fff;
+	font-family: 'AvenirNext', sans-serif;
+	font-size: $main-size;
 }
 
-
-
-
-
-
-
-
-
-
-
-// Start Header --------------------------------------------------------
+/* Header*/
 
 .header {
-  width: 100%;
-  .main-foto-1 {
-    height: 100vh;
-    background-image: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/fon.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-  }
-  .main-foto-2 {
-    height: 100vh;
-    background-image: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/fon2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-  }
-  .main-foto-3 {
-    height: 100vh;
-    background-image: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/fon3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-  }
-  .main-foto-4 {
-    height: 100vh;
-    background-image: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/fon4.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-  }
-  .container {
-    position: absolute;
-    right: 50%;
-    width: 1200px;
-    margin-right: -600px;
-    height: 670px;
-    bottom: 0px;
-    .logo {
-      padding-top: 30px;
-      display: inline-block;
-      h4 {
-        font-family: $montserrat;
-        font-weight: 700;
-        color: #fff;
-        display: inline-block;
-        font-size: 30px;
-      }
-    }
-    .menu ul {
-      word-spacing: 30px;
-    }
-    .menu ul li {
-      display: inline-block;
-      padding-top: 30px;
-    }
-    .menu ul li a {
-      text-transform: uppercase;
-      color: #fff;
-      line-height: 50px ;
-      text-decoration: none;
-      font-family: $montserrat;
-      font-weight: 400;
-      font-size: $size;
-    }
-    .menu ul li a:hover {
-      border-bottom: 2px solid $yellow;
-      color: $yellow;
-      padding-bottom: 7px;
-    }
-  }
-  h2 {
-    padding-top: 50px;
-    font-family: $kaushan;
-    color: #fff;
-    font-size: 72px;
-    padding-bottom: 40px;
-  }
-  h1 {
-    font-family: $montserrat;
-    font-weight: 700;
-    font-size: 100px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-  }
-  span {
-    display: block;
-    width: 100px;
-    color: #fff;
-    height: 4px;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-bottom: 70px;
-  }
-  .link-btn {
-    padding: 10px;
-    .link-more {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #fff;
-      font-size: $size;
-      font-family: $montserrat;
-      font-weight: 700;
-      border: 3px solid #fff;
-      padding: 10px 40px;
-    }
-  }
-  .main-text {
-    margin-top: 10px;
-    font-family: $montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    color: #faf3dc;
-    position: relative;
-    bottom: -75px;
-    left: 5px;
-  }
+	width: 100%;
+	background-color: #fff;
+	.header-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-top: 20px;
+		.logotype {
+			font-size: 20px;
+			.logo-link {
+				text-decoration: none;
+				color: $grey;
+			}
+			.logotype-message {
+				color: #50c5ee;
+				background: url(../img/shape.png) no-repeat center center;
+				padding: 10px;
+			}
+		}
+		.nav-main {
+			ul {
+				margin-top: 3px;
+				.nav-link {
+					display: inline-block;
+					border-right: 1px solid #000;
+					.main-link {
+						text-decoration: none;
+						color: #333;
+						padding-right: 20px;
+						padding-left: 10px;
+						line-height: 1;
+						font-size: $main-size;
+					}
+					.main-link:hover {
+						color: $blue;
+					}
+				}
+				.nav-link:last-child {
+					border-right: none;
+				}
+			}
+		}
+		.main-name {
+			.info-name {
+				.name {
+					display: inline-block;
+					padding-right: 25px;
+					margin: 0;
+				}
+				.link-name {
+					display: inline-block;
+					color: $blue;
+					text-decoration: underline;
+				}
+			}
+			.ava-foto {
+				position: absolute;
+			}
+		}
+		.main-section {
+			width: 100%;
+			margin-top: 50px;
+			background-color: #f9f9fa
+		}
+	}
 }
 
-Фоновый слайдер
+/* Main-word*/
 
-.slider {
-  position: relative;
-  width: 1200px;
-}
-.slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-
-.slider .slick-dots{
-  padding:0;
-  position: absolute;
-  bottom: 35px;
-}
-.slider .slick-dots li{
-  display:inline-block;
-  width:19%;
-  height: 3px;
-  margin:0 40px 0 0;
-  padding:0;
-  cursor:pointer;
-  background-color:#f7eac5;
-  background-size:100% 100%;
-  background-image:-webkit-gradient(linear, left, right, color-stop(1, rgb(16,56,16)), color-stop(1, transparent));
-  background-image:-o-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:-moz-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:-webkit-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:linear-gradient(to right,#f38181 100%,transparent 100%);
-  background-repeat:no-repeat;
-}
-.slider .slick-dots li:last-child{
-  margin-right:0;
-}
-.slider .slick-dots li:hover,.slider .slick-dots li.slick-active{
-  background-color:#a08a7f;
-}
-.slider .slick-dots li button{
-  display: none !important;
-}
-.slider .slick-dots li.slick-active~li{
-  background-size:0% 0%;
-}
-.slider .slick-dots li.slick-active{
-  -webkit-animation:right 3s ease-in-out forwards;
-  -moz-animation:right 3s ease-in-out forwards;
-  -o-animation:right 3s ease-in-out forwards;
-  animation:right 3s ease-in-out forwards;
-}
-@keyframes right{
-  0%{
-    background-size:0% 100%;
-  }
-
-  100%{
-    background-size:100% 100%;
-  }
-}
-// Конец фонового слайдера
-
-// Clode Header----------------------------
-
-
-
-
-
-
-
-
-
-// Start About-team-------------------------------------------------
-.about-team {
-  width: 100%;
-  background-color: #fff;
-  .container-team {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 70px;
-    .text-team {
-      padding-top: 70px;
-      font-family: $kaushan;
-      color: #000;
-      font-size: 24px;
-    }
-    .text-team-main {
-      font-family: $montserrat;
-      font-size: 30px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .line-red {
-      margin-top: 40px;
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: $pink;
-      margin: 50px auto;
-      margin-bottom: 70px;
-    }
-    .about-text {
-      font-family: $roboto;
-      font-size: $size;
-      color: #000;
-      padding-left: 150px;
-      padding-right: 150px;
-      font-weight: 400;
-      line-height: 1.7;
-      margin-bottom: 60px;
-    }
-  }
-  .foto-team {
-    position: relative;
-    background-color: $blue;
-    width: 380px;
-    height: 250px;
-    .about-team-foto-1 {
-      position: absolute;
-      width: 380px;
-      height: 250px;
-      background: url(../img/about-team/about-team-1.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin-left: 0px;
-      margin-top: 0px;
-      transition: margin 1s ease;
-    }
-    .about-team-foto-1:hover {
-      margin-top: -10px;
-      margin-left: -10px;
-      background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/about-team/about-team-1.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .about-team-foto-2 {
-      position: absolute;
-      width: 380px;
-      height: 250px;
-      background: url(../img/about-team/about-team-2.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin-left: 0px;
-      margin-top: 0px;
-      transition: margin 1s ease;
-    }
-    .about-team-foto-2:hover {
-      margin-top: -10px;
-      margin-left: -10px;
-      background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/about-team/about-team-2.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .about-team-foto-3 {
-      position: absolute;
-      width: 380px;
-      height: 250px;
-      background: url(../img/about-team/about-team-3.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin-left: 0px;
-      margin-top: 0px;
-      transition: margin 1s ease;
-    }
-    .about-team-foto-3:hover {
-      margin-top: -10px;
-      margin-left: -10px;
-      background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/about-team/about-team-3.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .mini-link {
-      text-align: center;
-      padding-top: 115px;
-      a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: $montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        p {
-          padding-top: 5px;
-        }
-      }
-    }
-  }
-}
-// Close About-Team-------------------------
-
-
-
-
-
-
-
-
-// Start Feature-numbers--------------------------------------------
-
-.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.col-xs-1-5 {
-  width: 20%;
-  float: left;
-}
-@media (min-width: 768px) {
-  .col-sm-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
-@media (min-width: 992px) {
-  .col-md-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
-@media (min-width: 1200px) {
-  .col-lg-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
-.feature-numbers {
-  width: 100%;
-  background-color: $blue;
-  .container-numbers {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    width: 1200px;
-    margin:0 auto;
-    text-align: center;
-    li {
-      display:inline-block;
-    }
-    .text-number {
-      font-family: $montserrat;
-      font-size: 52px;
-      font-weight: 700;
-      color: #fff;
-    }
-    .mini-text-number {
-      font-family: $montserrat;
-      font-weight: 400;
-      font-size: $size;
-      color: #fff;
-    }
-  }
-}
-// Close Feature-numbers--------------------
-
-
-
-
-
-
-
-// Start work --------------------------------------------------
-
-.work {
-  width: 100%;
-  background-color: #fff;
-  .container-work {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 90px;
-    .text-team {
-      padding-top: 70px;
-      font-family: $kaushan;
-      color: #000;
-      font-size: 24px;
-    }
-    .text-team-main {
-      font-family: $montserrat;
-      font-size: 30px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .line-red {
-      margin-top: 40px;
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: $pink;
-      margin: 50px auto;
-      margin-bottom: 70px;
-    }
-    .work-text {
-      padding-top: 40px;
-      display: inline-block;
-      padding-left: 30px;
-      font-family: $montserrat;
-      font-size: $size;
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 1.2;
-      color: rgb(51, 51, 51);
-    }
-    .work-text-about {
-      display: inline-block;
-      padding-left: 65px;
-      font-family: $roboto;
-      font-weight: 400;
-      font-size: 15px;
-    }
-  }
+.main-word {
+	width: 100%;
+	background-color: #f9f9fa;
+	.word-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-top: 50px;
+		.main-section {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			height: 20px;
+			.main-text {
+				display: inline-block;
+				a {
+					font-size: 16px;
+					text-decoration: none;
+					color: $blue;
+					line-height: 1;
+					display: inline-block;
+				}
+				a:hover {
+					color: $grey;
+				}
+			}
+			.my-consult {
+				display: inline-block;
+				padding-left: 5px;
+			}
+		}
+	}
 }
 
-// Close work ---------------------------
+/* Info-block */
 
-
-
-
-
-// Start Devices ---------------------------------------------------
-
-.devices {
-  width: 100%;
-  background: url(../img/mobile-fon.jpg) no-repeat center center;
-  .container-devices {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    .text-team {
-      padding-top: 70px;
-      font-family: $kaushan;
-      color: #000;
-      font-size: 24px;
-    }
-    .text-team-main {
-      font-family: $montserrat;
-      font-size: 30px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .line-red {
-      margin-top: 40px;
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: $pink;
-      margin: 50px auto;
-      margin-bottom: 70px;
-    }
-    .devices-ipad {
-      display: inline-block;
-      img {
-        height: 550px;
-        padding-left: 350px;
-      }
-    }
-    .devices-iphone {
-      display: inline-block;
-      position: absolute;
-      right: 250px;
-      img {
-        padding-top: 210px;
-      }
-    }
-  }
+.info-block {
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+	.info-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		a {
+			padding-right: 20px;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			text-decoration: none;
+			color: $grey;
+		}
+		a:hover {
+			border-bottom: 2px solid $blue;
+			border-right: 1px solid #eaeaea;
+			border-left: 1px solid #eaeaea;
+		}
+	}
 }
 
-// Close Devices ----------------------------
+/* Personal-info*/
+
+.personal-info {
+	background-color: #f9f9fa;
+	width: 100%;
+	.personal-container {
+		width: 1290px;
+		margin: 0 auto;
+		/* accordion */
+		/* Style the buttons that are used to open and close the accordion panel */
+		button.accordion {
+			background-color: #fff;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			text-align: left;
+			border: none;
+			outline: none;
+			-webkit-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+			border-bottom: 1px solid #eaeaea;
+			.check-info {
+				display: inline-block;
+				margin-left: 990px;
+			}
+			.review-info {
+				display: inline-block;
+				margin-left: 1050px;
+			}
+			.gly-inf {
+				float: right;
+			}
+		}
+		button.accordion:first-child {
+			margin-top: 20px;
+		}
 
 
-
-
-
-
-// Start service --------------------------------------------------
-
-.service {
-  width: 100%;
-  .container-service {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 90px;
-    .text-team {
-      padding-top: 140px;
-      font-family: $kaushan;
-      color: #000;
-      font-size: 24px;
-    }
-    .text-team-main {
-      font-family: $montserrat;
-      font-size: 30px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .line-red {
-      margin-top: 40px;
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: $pink;
-      margin: 50px auto;
-      margin-bottom: 70px;
-    }
-    .service-text {
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: $roboto;
-      font-size: 15px;
-      font-weight: 400;
-      padding-bottom: 70px;
-    }
-  }
-}
-// Start accordion 
-
-
-/* стили блока аккордеон */
-.accordion {
-  width:100%;
-  margin: 0 auto
-}
-/* секции аккордеона */
-.accordion .accordion_item {
-  margin-bottom:1px;
-  position:relative;
-  border-top: 1px solid #e5e5e5;
-  padding-top: 10px;
-}
-.accordion_item:last-child {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* заголовки панелей аккордеона */
-.accordion .title_block {
-  display: inline-block;
-  font-size: 14px;
-  color: #000;
-  cursor:pointer;
-  text-transform: uppercase;
-  font-family: $montserrat;
-  font-weight: 700;
-  padding:10px 55px 10px 15px;
-  -webkit-transition:all .2s linear 0;
-  -webkit-transition-delay:.2s 0;
-  transition:all .2s linear 0
-}
-/* переключатель панелей, положение вниз */
-.accordion .title_block:before {
-  content:'';
-  height:8px;
-  width:8px;
-  display:block;
-  border:2px solid #ccc;
-  border-right-width:0;
-  border-top-width:0;
-  -ms-transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-  transform:rotate(-45deg);
-  position:absolute;
-  right:20px;
-  top:18px
-}
-/* активный переключатель, положение вверх */
-.accordion .active_block .title_block:before {
-  border:2px solid #ccc;
-  border-left-width:0;
-  border-bottom-width:0;
-  top:18px
-}
-.accordion .title_block:hover {
-  background: none; 
-}
-/* блоки с содержанием */
-.accordion .info {
-  padding: 0px;
-  display:none;
-}
-::-webkit-scrollbar-button {
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:10px;
-  height:0px
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+	background-color: #fff;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 15px;
-  background-color: $blue;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background-color: $pink;
-  cursor: pointer;
-
-}
-
-::-webkit-resizer{
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:4px;
-  height:0px
-}
-
-::-webkit-scrollbar{
-  width: 4px;
-}
-/* параграф внутри блоков с содержанием */
-.accordion .info_item {
-  margin-bottom: 0px
-}
-/* картинки внутри аккордеона */
-.accordion .info img {
-  height: auto;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-/* полноразмерная картинка */
-.large-img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-/* миниатюра слева */
-.img-left {
-  width: 25%;
-  float:left;
-  margin:5px 15px 5px 0;
-}
-/* миниатюра справа */
-.img-right {
-  width: 25%;
-  float:right;
-  margin:5px 0 5px 15px;
-}
-// Close accordion
-/* Styles specific to this particular page */
-.scroll-pane {
-  width: 100%;
-  height: 200px;
-  overflow-y: scroll;
-  padding-right: 5px;
-}
-
-// Close service ----------------------------
-
-// Start first-slider -----------------------------------------------------
-
-.first-slider-comment {
-  width: 100%;
-  background: #F8F8F8;
-  .first-slider-container {
-    width: 1200px;
-    margin: 0 auto;  
-  }
-}
-.slider-foto {
-  margin-left: 125px;
-  margin-top: 50px;
-  padding: 24px;
-  display: inline-block;
-  border: 2px solid #95e1d3;
-}
-
-.carousel-inner {
-  margin-top: 50px;
-  height: 200px;
-  background-color: #f8f8f8;
-  margin-bottom: 50px;
-}
-.carousel-caption {
- width: 800px;
- padding-left: 30px;
- padding-top: 0px;
- text-align: left;
- font-size: 20px;
- font-weight: 300;
- bottom: -45px;
- .slider-main-text {
-  font-family: $roboto;
-  font-style: italic;
-  text-shadow: none;
-  color: #999;
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	background-color: white;
+	display: none;
+	.panel-info {
+		width: 800px;
+		border-bottom: 1px solid #eaeaea;
+		margin-bottom: 40px;
+	}
+	.log-info {
+		margin-bottom: 30px;
+		display: inline-block;
+		padding-right: 200px;
+	}
+	.place-info {
+		display: inline-block;
+	}
+	.my-place {
+		display: inline-block;
+		padding-left: 20px;
+	}
 }
 }
-a.left.carousel-control {
-  background: #f8f8f8;
-  width: 100px;
+.section-form-1 {
+	display: inline-block;
 }
-.glyphicon-chevron-left:before {
-  font-size: 20px;
-  color: #000;
+.form-enter-info-1 {
+	display: inline-block;
+	.text-name-info {
+		span {
+			color: $blue;
+		}
+	}
+	.info-type {
+		padding: 10px 50px 10px 10px;
+		width: 330px;
+		margin-bottom: 50px;
+		border-radius: 3px;
+		border: 1px solid #b8b8b8;
+		outline: none;
+	}
+	.info-type-2 {
+		margin-bottom: 100px;
+	}
+	.btn-button {
+		padding: 13px 60px 13px 60px;
+		font-family: $avenir;
+		font-size: 20px;
+		background-color: $blue;
+		color: #fff;
+	}
 }
-.slider-line-red {
-  width: 90px;
-  height: 2px;
-  top: 17px;
-  display: block;
-  position: relative;
-  background-color: #f38181;
+.section-form-2 {
+	display: inline-block;
 }
-.slider-text {
-  padding-left: 120px;
-  font-family: $kaushan;
-  font-size: 20px;
-  text-shadow: none;
-  color: #000;
+.form-enter-info-2 {
+	display: inline-block;
+	.text-name-info {
+		span {
+			color: $blue;
+		}
+	}
+	.info-type {
+		padding: 10px 50px 10px 10px;
+		width: 330px;
+		margin-bottom: 50px;
+		border-radius: 3px;
+		border: 1px solid #b8b8b8;
+		outline: none;
+	}
+	.info-type-2 {
+		margin-bottom: 15px;
+	}
+	.help-text-info {
+		margin-bottom: 63px;
+		color: #cbcbcb;
+	}
+	.btn-button {
+		padding: 13px 60px 13px 60px;
+		font-family: $avenir;
+		font-size: 20px;
+		background-color: $blue;
+		color: #fff;
+	}
+	.btn-green {
+		background-color: #7fd41b;
+	}
 }
-a.right.carousel-control {
-  background: #f8f8f8;
-  width: 100px;
+.section-form-3 {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	.one-square {
+		position: relative;
+		width: 220px;
+		height: 220px;
+		bottom: 100px;
+		margin: 0 auto;
+		background: #fff;
+		border-radius: 50%;
+		border: 1px solid #ededed;
+		.two-square {
+			position: absolute;
+			width: 180px;
+			height: 180px;
+			top: 20px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background: #f9f9fb;
+			border-radius: 50%;
+			border: 1px solid #ededed;
+			.foto-ava {
+				text-align: center;
+				margin-top: 20%;
+				span {
+						color: #a2a2a2;
+					}
+				.main-ava-foto {
+					position: absolute;
+					bottom: 0;
+					right: 0px;
+					height: 180px;
+					border-radius: 50%;
+				    border: none;
+				    width: 180px;
+				    background-size: cover;
+				    overflow: hidden;
+				}
+				.text-ava {
+					margin-top: 20px;
+					color: #cccccd;
+				}
 }
-.glyphicon-chevron-right:before {
-  font-size: 20px;
-  color: #000;
 }
-
-// Close first-slider -----------------------
-
-
-// Start meet team ------------------------------------------------------------
-
-.meet {
-  width: 100%;
-  background-color: #fff;
-  .container-meet {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 90px;
-    .text-team {
-      padding-top: 140px;
-      font-family: $kaushan;
-      color: #000;
-      font-size: 24px;
-    }
-    .text-team-main {
-      font-family: $montserrat;
-      font-size: 30px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .line-red {
-      margin-top: 40px;
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: $pink;
-      margin: 50px auto;
-      margin-bottom: 70px;
-    }
-    .service-text {
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: $roboto;
-      font-size: 15px;
-      font-weight: 400;
-      padding-bottom: 70px;
-    }
-    .foto-team-our {
-      margin-left: 0px;
-    }
-    .foto-team {
-      position: relative;
-      background-color: $blue;
-      width: 340px;
-      height: 390px;
-      .about-team-foto-1 {
-        position: absolute;
-        width: 340px;
-        height: 390px;
-        background: url(../img/meet/man-1.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: 0px;
-        margin-top: 0px;
-        transition: margin 1s ease;
-      }
-      .about-team-foto-1:hover {
-        margin-top: -10px;
-        margin-left: -10px;
-        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-1.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-      .about-team-foto-2 {
-        position: absolute;
-        width: 340px;
-        height: 390px;
-        background: url(../img/meet/man-2.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: 0px;
-        margin-top: 0px;
-        transition: margin 1s ease;
-      }
-      .about-team-foto-2:hover {
-        margin-top: -10px;
-        margin-left: -10px;
-        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-2.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-      .about-team-foto-3 {
-        position: absolute;
-        width: 340px;
-        height: 390px;
-        background: url(../img/meet/man-3.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: 0px;
-        margin-top: 0px;
-        transition: margin 1s ease;
-      }
-      .about-team-foto-3:hover {
-        margin-top: -10px;
-        margin-left: -10px;
-        background: -webkit-linear-gradient(90deg, rgba(252, 227, 138, 0.62) 0%, rgba(243, 129, 129, 0.58) 100%), url(../img/meet/man-3.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-      .mini-link {
-        position: relative;
-        width: 243px;
-        height: 50px;
-        background-color: #fce38a;
-        margin: 0 auto;
-        top: 50%;
-        a {
-          border-right: 1px solid #f9bd87;
-          padding: 9px 19px 25px 19px;
-          text-decoration: none;
-          img {
-            vertical-align: middle;
-            padding-top: 10px;
-          }
-        }
-        a:last-child {
-          border-right: none;
-        }
-        .link-facebook {
-          background: url(../img/meet/meet-svg/white/facebook.png) no-repeat center center;
-        }
-        .link-facebook:hover {
-          background: url(../img/meet/meet-svg/white/facebook-white.png) no-repeat center center;
-          background-color: $pink;
-        }
-        .link-twitter {
-          background: url(../img/meet/meet-svg/white/twitter.png) no-repeat center center;
-        }
-        .link-twitter:hover {
-          background:  url(../img/meet/meet-svg/white/twitter-white.png) no-repeat center center;
-          background-color: $pink;
-        }
-        .link-pinterest {
-          background: url(../img/meet/meet-svg/white/pinterest.png) no-repeat center center;
-        }
-        .link-pinterest:hover {
-          background:  url(../img/meet/meet-svg/white/pinterest-white.png) no-repeat center center;
-          background-color: $pink;
-        }
-        .link-instagram {
-          background: url(../img/meet/meet-svg/white/instagram.png) no-repeat center center;
-        }
-        .link-instagram:hover {
-          background:  url(../img/meet/meet-svg/white/instagram-white.png) no-repeat center center;
-          background-color: $pink;
-        }
-        .social-link {
-          padding: 2px 39px 32px 21px;
-        }
-      }
-    }
-  }
-  .name-man {
-    text-align: center;
-    .name-mane-team {
-      padding-top: 30px;
-      font-family: $montserrat;
-      font-weight: 700;
-      font-size: $size;
-      text-transform: uppercase;
-    }
-    .worker-team {
-      font-family: $roboto;
-      font-style: italic;
-      font-size: $size;
-      font-weight: 300;
-    }
-  }
+}
+.file-upload {
+	position: relative;
+	overflow: hidden;
+	width: 55%;
+	bottom: 70px;
+	height: 55px;
+	background: #4fc6ef;
+	border-radius: 3px;
+	padding: 8px 2px;
+	color: #fff;
+	text-align: center;
+}
+ /* .file-upload:hover {*/
+ /* 	background: #4fc6ef;*/
+ /* }*/
+ .file-upload input[type="file"]{
+    display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+     /* Растягиваем label на всю возможную площадь блока .file-upload */
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+ }
+ .file-upload span {
+     line-height: 55px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+ }
+ .file-text-upload {
+ 	position: relative;
+ 	bottom: 50px;
+ 	color: #b2b2b2;
+ }
+ .btn-button {
+ 	position: relative;
+ 	bottom: 26px;
+ 	padding: 13px 60px 13px 60px;
+ 	font-family: $avenir;
+ 	font-size: 20px;
+ 	background-color: $blue;
+ 	color: #fff;
+ }
+ .btn-red {
+ 	background-color: #d75554;
+ }
+}
+.footer {
+	width: 100%;
+	background-color: #f9f9fa;
+	.footer-container {
+		width: 1280px;
+		margin: 0 auto;
+		.vk-theme {
+			display: inline-block;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			.vkontakte-img {
+				margin-right: 30px;
+			}
+		}
+		.footer-nav {
+			text-align: right;
+			li {
+				display: inline-block;
+				margin-top: 50px;
+				a {
+					text-decoration: none;
+					color: #505051;
+					border-right: 1px solid #535353;
+					padding-right: 17px;
+					padding-left: 17px;
+				}
+			}
+			li:last-child {
+				a {
+					border: none;
+				}
+			}
+			a:hover {
+				color: $blue;
+			}
+		}
+	} 
+}
 }
 
 
 
 
+/* footer-block */
 
 
-// Close meet team ---------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Подключаем Шрифты */
+
+@font-face {
+	font-family: 'AvenirNext';
+	src: url(../fonts/AvenirNext-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
