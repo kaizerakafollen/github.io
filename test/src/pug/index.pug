@@ -1,0 +1,94 @@
+doctype html
+html(lang='ru')
+	include inc/head.pug
+	body
+		.header
+			.row
+				.logo-main.col-xs-6.col-sm-3.col-md-6.col-lg-6
+					h1 webfolio
+					h5 my web design portfolio
+				ul.nav.col-xs-6.col-sm-9.col-md-6.col-lg-6
+					li
+						a(href="#") resume
+					li
+						a(href="#") works
+					li
+						a(href="#") about me
+					li
+						a(href="#") home
+		.main-text
+			.container
+				.row
+					.text
+						span &#8220;
+						p.sub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quod.
+						img(src="dist/img/pencil.png" class="pencil" alt="pencil")
+						img(src="dist/img/linear.png" class="linear" alt="linear")
+		.main-content
+			.container
+				.row
+					p.portfolio-caption.col-xs-12.col-sm-12.col-md-12.col-lg-12 Portfolio
+					.section-foto.col-xs-12.col-sm-12.col-md-12.col-lg-12
+						a(href="#")
+							img(src="dist/img/img1.png", class="foto" alt="work1")
+						a(href="#")
+							img(src="dist/img/img2.png", class="foto" alt="work2")
+						a(href="#")
+							img(src="dist/img/img3.png", class="foto" alt="work3")
+						a(href="#")
+							img(src="dist/img/img4.png", class="foto" alt="work4")
+						a(href="#")
+							img(src="dist/img/img5.png", class="foto" alt="work5")
+						a(href="#")
+							img(src="dist/img/img6.png", class="foto" alt="work6")
+						a(href="#")
+							img(src="dist/img/img7.png", class="foto" alt="work7")
+						a(href="#")
+							img(src="dist/img/img8.png", class="foto" alt="work8")
+						a(href="#")
+							img(src="dist/img/img9.png", class="foto" alt="work9")
+						a(href="#")
+							img(src="dist/img/img10.png", class="foto" alt="work10")
+						a(href="#")
+							img(src="dist/img/img11.png", class="foto" alt="work11")
+						a(href="#")
+							img(src="dist/img/img12.png", class="foto" alt="work12")
+		.footer
+			.container
+				.row
+					.about-author.col-xs-12.col-sm-12.col-md-7.col-lg-7
+						img(src="dist/img/author-image.png", class="author" alt="author")
+						p.author-name  Lorem ipsum
+						img(src="dist/img/location.svg", class="place" alt="place")
+						p.name-place Saransk, Russia
+						a(href="#" class="twitter-link")
+							img(src="dist/img/twitter.svg", class="twitter" alt="twitter")
+						a(href="#" class="dribbble-link")
+							img(src="dist/img/dribbble.svg", class="dribbble" alt="dribbble")
+						p.about-author-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					.panel-exp.col-xs-12.col-sm-12.col-md-5.col-lg-5
+						p.my-skill My skill
+						.skill-panel.clearfix(data-percent='60%')
+							.skill-panel-title
+								span HTML5
+							.skill-panel-panel
+							.skill-panel-percent 60%
+						.skill-panel.clearfix(data-percent='40%')
+							.skill-panel-title
+								span SCSS
+							.skill-panel-panel
+							.skill-panel-percent 40%
+						.skill-panel.clearfix(data-percent='25%')
+							.skill-panel-title
+								span jQuery
+							.skill-panel-panel
+							.skill-panel-percent 25%
+						.skill-panel.clearfix(data-percent='50%')
+							.skill-panel-title
+								span JS
+							.skill-panel-panel
+							.skill-panel-percent 50%
+
+
+
+
