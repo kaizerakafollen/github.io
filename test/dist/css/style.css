@@ -44,8 +44,41 @@ body {
   color: #000;
   cursor: pointer;
 }
+.welcome-block .error-code {
+  padding: 40px;
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px #f00, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  color: #f00;
+}
+.welcome-block .error-code p {
+  margin: 0;
+}
+.error {
+  color: #fff;
+  text-shadow: 0 0 80px #fff, 0 0 30px #008000, 0 0 6px #00f;
+}
+.error:hover {
+  text-shadow: 0 0 200px #fff, 0 0 80px #008000, 0 0 6px #00f;
+}
+.error span {
+  -webkit-animation: upper 11s linear infinite;
+          animation: upper 11s linear infinite;
+}
+.code:hover {
+  text-shadow: 0 0 100px #f00, 0 0 40px FireBrick, 0 0 8px DarkRed;
+}
+.code span:nth-of-type(2) {
+  -webkit-animation: lower 10s linear infinite;
+          animation: lower 10s linear infinite;
+}
+.code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity: 0.4;
+}
 .main-text {
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 .main-text .container .text {
@@ -98,29 +131,36 @@ body {
   position: relative;
 }
 .footer .container .row .about-author .author {
-  position: absolute;
-  bottom: 190px;
+/* bottom: 181px; */
   padding: 10px;
   background: #fff;
   color: #fff;
 }
 .footer .container .row .about-author .author-name {
   color: #fff;
-  margin-left: 180px;
-  margin-top: 20px;
+  margin-left: 10px;
   font-family: 'Fjalla One', sans-serif;
   font-style: italic;
   font-size: 24px;
+/* margin-top: -8px; */
+  margin-bottom: 19px;
+  display: inline-block;
   letter-spacing: 2px;
 }
 .footer .container .row .about-author .place {
-  margin-left: 180px;
+  margin-left: -140px;
+  margin-top: 49px;
 }
 .footer .container .row .about-author .name-place {
-  margin-left: 10px;
-  display: inline-block;
+  margin-left: 12px;
+/* display: inline-block; */
   color: #fff;
   font-size: 14px;
+  margin-top: -57px;
+  margin-left: 180px;
+}
+.footer .container .row .about-author .twitter-link {
+  margin-left: 70px;
 }
 .footer .container .row .about-author .twitter-link .twitter {
   margin-left: 100px;
@@ -181,6 +221,49 @@ body {
   height: 35px;
   line-height: 35px;
   color: #fff;
+}
+.col-xs-12 {
+  width: 100%;
+}
+@-webkit-keyframes upper {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px #fff, 0 0 30px #008000, 0 0 6px #00f;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@keyframes upper {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px #fff, 0 0 30px #008000, 0 0 6px #00f;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes lower {
+  0%, 12%, 18.999%, 23%, 31.999%, 37%, 44.999%, 46%, 49.999%, 51%, 58.999%, 61%, 68.999%, 71%, 85.999%, 96%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px #f00, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  }
+  19%, 22.99%, 32%, 36.999%, 45%, 45.999%, 50%, 50.99%, 59%, 60.999%, 69%, 70.999%, 86%, 95.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@keyframes lower {
+  0%, 12%, 18.999%, 23%, 31.999%, 37%, 44.999%, 46%, 49.999%, 51%, 58.999%, 61%, 68.999%, 71%, 85.999%, 96%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px #f00, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  }
+  19%, 22.99%, 32%, 36.999%, 45%, 45.999%, 50%, 50.99%, 59%, 60.999%, 69%, 70.999%, 86%, 95.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
